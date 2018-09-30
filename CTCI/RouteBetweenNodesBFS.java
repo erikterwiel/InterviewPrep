@@ -2,8 +2,10 @@ import sun.misc.Queue;
 
 class RouteBetweenNodesBFS {
   public boolean checkRoute(Node start, Node end) {
+    
     Queue<T> queue = new Queue();
     queue.add(start);
+    
     while (!queue.isEmpty()) {
       Node single = queue.dequeue();
       if (single == end) {
